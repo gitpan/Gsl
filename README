@@ -1,0 +1,16 @@
+
+Gsl - Perl Interface to The GNU Scientific Library
+--------------------------------------------------
+
+By Jonathan Leto <jonathan@leto.net>
+
+Currently on the Special Functions of GSL are implemented.
+
+The POD documentation should tell you all that you need to know.
+If you want to help me implement other parts of GSL, please
+contact me.
+
+This code has not been thoroughly tested at all, and should be
+considered alpha software.
+
+This code is release under the GPL Version 2.

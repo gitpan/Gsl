@@ -1,0 +1,19 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Gsl qw( :Zeta ) ;
+
+my $status;
+my $g = new Gsl::SpecialFunction;
+
+# just want to use one function
+
+$status = Gsl::SpecialFunction::gamma_e( 5, $g );
+print "Value of gamma( 5 ) is " .  $g->val . "\n";
+$status = Gsl::SpecialFunction::lngamma_e( 5, $g );
+print "Value of lngamma( 5 ) is " . $g->val . "\n";
+
+# or use the imported function like normal
+print "Value of imported hzeta(5,3) function: " . hzeta(5,3) . "\n";
+
+

@@ -1,0 +1,13 @@
+const double					T_DOUBLE
+double						T_DOUBLE
+int						T_IV
+const gsl_sf_result_e10 *			T_PTROBJ
+gsl_sf_result_e10	* 			T_PTROBJ
+double *					T_PTROBJ
+const int					T_IV
+gsl_sf_result *					T_PTROBJ
+const gsl_sf_result *				T_PTROBJ
+const unsigned int				T_UV
+const gsl_mode_t                                T_PTROBJ
+gsl_mode_t                                      T_PTROBJ
+
