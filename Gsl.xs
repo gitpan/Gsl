@@ -24,6 +24,7 @@
 #include <gsl/gsl_sf_hyperg.h>
 #include <gsl/gsl_sf_laguerre.h>
 #include <gsl/gsl_sf_legendre.h>
+#include <gsl/gsl_sf_lambert.h>
 #include <gsl/gsl_sf_log.h>
 #include <gsl/gsl_sf_pow_int.h>
 #include <gsl/gsl_sf_psi.h>
@@ -153,15 +154,16 @@ constant(name,arg)
 MODULE = Gsl		PACKAGE = Gsl::SpecialFunction	 PREFIX = gsl_sf_	
 PROTOTYPES: ENABLE
 
-
 gsl_sf_result *
-new (CLASS) 
+new (CLASS)
   char *CLASS
         CODE:
                 gsl_sf_result * result;
-		RETVAL = (gsl_sf_result *)safemalloc( sizeof( gsl_sf_result ) );
+                RETVAL = (gsl_sf_result *)safemalloc( sizeof( gsl_sf_result ) );
         OUTPUT:
                 RETVAL
+
+
 
 double
 constant(name,arg)
@@ -1775,6 +1777,25 @@ gsl_sf_laguerre_n(n, a, x)
 	int	n
 	double	a
 	double	x
+
+
+double
+gsl_sf_lambert_W0(x)
+        double  x
+
+int
+gsl_sf_lambert_W0_e(x, result)
+        double  x
+        gsl_sf_result * result
+
+double
+gsl_sf_lambert_Wm1(x)
+        double  x
+
+int
+gsl_sf_lambert_Wm1_e(x, result)
+        double  x
+        gsl_sf_result * result
 
 
 int

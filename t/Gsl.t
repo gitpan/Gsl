@@ -29,3 +29,10 @@ if( int( $g->val ) == 24 ){
 	print "not ok 5\n";
 }
 
+
+my $answer = gamma ( 6 );
+print "The answer is $answer\n";
+$answer = lambert_W0( 2.3 );
+print "The answer is $answer\n";
+
+

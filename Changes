@@ -1,5 +1,9 @@
 Revision history for Perl extension Gsl.
 
+0.03 Sun Sep 02 11:43:44 2001 
+	- Added gsl_sf_lambert_W0, gsl_sf_lambert_Wm1 Special functions,
+		coinciding with the Gsl 0.9.2 release.
+
 0.02 Sat Jul 14 18:35:50 2001  
 	- All special functions are now supported
 	- now everything is OO, gsl_sf_result struct is emulated

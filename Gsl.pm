@@ -68,6 +68,7 @@ require AutoLoader;
 				hyperg_2F1_e hyperg_2F1 hyperg_2F1_conj_e hyperg_2F1_conj hyperg_2F1_renorm_e
 				hyperg_2F1_renorm hyperg_2F1_conj_renorm_e hyperg_2F1_conj_renorm hyperg_2F0_e hyperg_2F0 ) ],
 		Laguerre =>	[ qw( laguerre_1_e laguerre_2_e laguerre_3_e laguerre_1 laguerre_2 laguerre_3 laguerre_n_e laguerre_n ) ],
+		Lambert	 =>	[ qw( lambert_W0 lambert_Wm1 )],
 		Legendre =>     [ qw( legendre_Pl_e legendre_Pl legendre_Pl_array legendre_P1_e legendre_P2_e legendre_P3_e legendre_P1
 				legendre_P2 legendre_P3 legendre_Q0_e legendre_Q0 legendre_Q1_e legendre_Q1 legendre_Ql_e legendre_Ql 
 				legendre_Plm_e legendre_Plm legendre_Plm_array legendre_sphPlm_e legendre_sphPlm legendre_sphPlm_array 
@@ -179,6 +180,7 @@ Gsl - Perl Interface to The GNU Scientific Library
                 Gegenbauer - Gegenbauer Functions 
                 HyperGeometric - Hypergeometric Functions 
                 Laguerre - Laguerre Functions 
+		Lambert  - Lambert Functions
                 Legendre - Legendre Functions and Spherical Harmonics 
                 Log - Logarithm and Related Functions 
                 Power - Power Function (x^n) 
